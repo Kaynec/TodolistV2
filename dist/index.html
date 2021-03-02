@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./syles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+           <div id="toggleandselect">
+            <a id="toggleprojectform">+</a>
+            <select name="pselect" id="select">
+            </select>
+            <button id="removeproject">Remove This Project</button>
+           </div>
+         </header>
+        </div>
+        <div id="addtodo"><button class="plus-button"></button></div>
+        <div id='count'>
+            <span>Todo</span>
+            <span> Tasks Remaining</span>
+        </div>
+        <div id="projectform">
+            <form>
+                <label for="title">Enter Your Project Name</label>
+                <input type="text" maxlength="25" placeholder="something" name="projectinput" required>
+                <br>
+                <button id="submitproject" type="submit">Submit</button>
+                <button id="cancelProject">cancel</button>
+            </form>
+            <p id="projectparagraph"></p>
+        </div>
+
+
+        <div id="addtodo">
+            <div id="todoform">
+             <label for="title">Title Of Your Todo</label><br>
+             <input id="title" type="text" maxlength="20"><br>
+     
+             <label for="date">Date</label>
+             <input id="date" type="date"><br>
+     
+             <label for="select">How Important is it </label><br>
+             <select name="select" id="todoselect">
+                 <option value="Normal">Normal</option>
+                 <option value="Important">Important</option>
+             </select><br>
+     
+             <label for="description">Add Description </label><br>
+             <textarea name="description" id="description" maxlength="100"></textarea>
+             <br>
+             <button id="submittodo">Submit</button>
+             <button id="canceltodo">cancel</button>
+             <p id="todoformpara"></p>
+         </div>
+
+         
+
+    <div id="taskcontainer">
+        <div id="todo-container">
+        </div>
+    
+        <div id="done-container">
+            <span>Done</span>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <template id="todo-template">
+        <div class="todo">
+            <div class="innertodo">
+                <div>
+                    <input type="checkbox" id="todo" name="todo" value="todo">
+                    <label for="todo" data-content="Get out of bed"></label>
+                </div>
+                <div id="dateandremove">
+                    <label></label>
+                    <button id="removeproject">X</button>
+                    <button id="edittodo">Edit</button>
+                </div>
+            </div>
+            <div class="paragraph">
+                <p></p>
+            </div>
+        </div>
+</template>
+    <script src="./main.js"></script>
+</body>
+</html>
