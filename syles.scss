@@ -496,4 +496,20 @@ body {
        appearance: button;
   outline: none;
 }
+
+@media screen and (min-width: 800px){
+  html {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 13.2px;
+  }
+  
+}
+@media screen and (min-width: 1200px){
+  html {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
 /*# sourceMappingURL=syles.css.map */

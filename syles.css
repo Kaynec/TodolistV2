@@ -432,18 +432,18 @@ body {
 }
 
 .innertodo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .innertodo > div {
   width: 50%;
-  word-break: break-word;
+  word-break: break-all;
 }
 
 .paragraph {
   font-size: 1.2rem;
-  width: 95vw;
-  word-break: break-word;
 }
 
 #changetodo {
@@ -495,5 +495,21 @@ body {
   -moz-appearance: button;
   appearance: button;
   outline: none;
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 13.2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=syles.css.map */
