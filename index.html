@@ -17,12 +17,14 @@
             <button id="removeproject">Remove This Project</button>
            </div>
          </header>
+         <small>click on a todos white space to show/hide it's description</small>
 
          <div id="addtodo"><button class="plus-button"></button></div>
         <div id='count'>
             <span>Todo</span>
             <span> Tasks Remaining</span>
         </div>
+        
 
         <div id="taskcontainer">
 
@@ -31,7 +33,7 @@
 
             <div id='count2'>
                 <span>Done</span>
-            </div>
+            </div><br>
             
             <div id="done-container">
                 
@@ -76,10 +78,9 @@
          </div>
 
     </div>
+   
     </div>
-
-
-
+   
     <template id="todo-template">
         <div class="todo">
             <div class="innertodo">
@@ -98,6 +99,26 @@
             </div>
         </div>
 </template>
+
+
+
+    <div id="changetodo">
+        <label for="title">Title</label><br>
+        <input type="text" required maxlength="20"><br>
+        <label for="date">Date</label>
+        <input type="date" required><br>
+        <label for="select">priority</label><br>
+        <select name="select">
+            <option value="Normal">Normal</option>
+            <option value="Important">Important</option>
+        </select><br>
+        <label>Add Description </label><br>
+        <textarea name="description" maxlength="100"></textarea>
+        <br>
+        <button type="submit" id='changetodoinfo'>Submit</button>
+        <button id='canceltodo'>cancel</button><br>
+    </div>
+
     <script src="./main.js"></script>
 </body>
 </html>
