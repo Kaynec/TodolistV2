@@ -1,6 +1,5 @@
-import {todorender} from './todo'
-import { makeProject ,savetoLocal} from "./classesandsave"
-export {hideForm,addProject,ShowProjectForm,projects,projectRender} 
+import { makeProject} from './classesandsave';
+export {hideForm,addProject,ShowProjectForm,projects,projectRender,removeProject} 
 
 let projects=[];
 projects.push(makeProject('Tasks'))
@@ -37,7 +36,6 @@ function addProject(form,projectArray){
             projectRender(projectArray)
             select.value=text.value
             text.value=""
-            savetoLocal(projectArray)
         }
 }
 
@@ -52,4 +50,32 @@ function projectRender(projectArray){
         option.id=project.id
         select.appendChild(option)
     });
+}
+
+
+function removeProject(){
+    var select = document.getElementById('select')
+    if (select.selectedIndex==0){
+        projecterrors.style.display="block"
+        projecterrors.innerText="Can't remove the Tasks Project"
+        setTimeout(() => {
+            projecterrors.innerText=""
+            projecterrors.style.display="none"
+        }, 1500);
+    }
+
+    else {
+    var options = select.options;
+    var id = options[options.selectedIndex].id;
+    projects=projects.filter(project=>{
+        return project.id!==id
+    })
+     projecterrors.style.display="block"
+     projecterrors.innerText=`succesfully removed project ${select.value}`
+        setTimeout(() => {
+      projecterrors.innerText=""
+      projecterrors.style.display="none"
+    }, 1500);
+    projectRender(projects)
+    }
 }

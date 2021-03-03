@@ -14,13 +14,6 @@
   width: 100%;
   height: 100%;
 }
-
-* #done-container span {
-  font-size: 1.5rem;
-  padding: .2rem .5rem;
-  border-left: 2px solid violet;
-}
-
 * #count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,7 +22,19 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
+#count2{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+          font-size: 1.5rem;
+  padding: .2rem .5rem;
+  font-size: 1.5rem;
+  padding: .2rem .5rem;
+  border-left: 2px solid violet;
+}
 * #count span {
   font-size: 1.5rem;
   padding: .2rem .5rem;
@@ -83,8 +88,8 @@ input[type="checkbox"]:checked::before {
 }
 
 input[type="checkbox"]:checked ~ label::before {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 800%);
+          clip-path: polygon(0 0, 800% 2, 400% 200%, 0 800%);
 }
 
 label {
@@ -208,7 +213,21 @@ body {
       grid-template-columns: 1fr;
   padding: 1rem 0;
 }
-
+.innertodo {
+  display: flex;
+  width: 100%;
+}
+.innertodo > div {
+width: 50%;
+flex: 1;
+}
+#dateandremove label {
+  color: #05879e;
+}
+#dateandremove button {
+  width: auto;
+  background: red;
+}
 #todo-container .innertodo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,6 +259,10 @@ body {
 #todoform{
   z-index: 1;
 }
+#removeproject:hover{
+  cursor: pointer;
+  color: #363839;
+}
 #todo-container button {
   background: none;
   border-radius: .5rem;
@@ -248,7 +271,16 @@ body {
   font-weight: lighter;
   font-size: 1.4rem;
 }
-
+#projecterrors {
+  background: #0eb4d1;
+  padding: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  margin: 3rem;
+}
 .plus-button {
   position: fixed;
   bottom: 0;
