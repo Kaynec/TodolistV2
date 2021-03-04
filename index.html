@@ -20,7 +20,7 @@
          </header>
          <small>click on a todos white space to show/hide it's description</small>
 
-         <div id="addtodo"><button class="plus-button"></button></div>
+         <div id="addtodo"><button class="plus-button" type="button"></button></div>
         <div id='count'>
             <span>Todo</span>
             <span> Tasks Remaining</span>
@@ -50,7 +50,7 @@
                 <input type="text" maxlength="25" placeholder="something" name="projectinput" required>
                 <br>
                 <button id="submitproject" type="submit">Submit</button>
-                <button id="cancelProject">cancel</button>
+                <button id="cancelProject" >cancel</button>
             </form>
             <p id="projectparagraph"></p>
         </div>
@@ -73,8 +73,8 @@
              <label for="description">Add Description </label><br>
              <textarea name="description" id="description" maxlength="100"></textarea>
              <br>
-             <button id="submittodo">Submit</button>
-             <button id="canceltodo">cancel</button>
+             <button type="submit" id="submittodo">Submit</button>
+             <button type="button" id="canceltodo">cancel</button>
              <p id="todoformpara"></p>
          </div>
 
@@ -99,7 +99,7 @@
         <textarea name="description" maxlength="100"></textarea>
         <br>
         <button type="submit" id='changetodoinfo'>Submit</button>
-        <button id='canceltodo'>cancel</button><br>
+        <button type="button" id="canceltodo">cancel</button><br>
     </form>
 
     </div>
