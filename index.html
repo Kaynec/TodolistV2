@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo.png" />
     <link rel="stylesheet" href="./syles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,30 +80,12 @@
 
     </div>
    
-    </div>
-   
-    <template id="todo-template">
-        <div class="todo">
-            <div class="innertodo">
-                <div>
-                    <input type="checkbox" id="todo" name="todo" value="todo">
-                    <label for="todo" data-content="Get out of bed"></label>
-                </div>
-                <div id="dateandremove">
-                    <label></label>
-                    <button id="removeproject">X</button>
-                    <button id="edittodo">Edit</button>
-                </div>
-            </div>
-            <div class="paragraph">
-                <p></p>
-            </div>
-        </div>
-</template>
 
 
 
-    <div id="changetodo">
+
+
+    <form id="changetodo">
         <label for="title">Title</label><br>
         <input type="text" required maxlength="20"><br>
         <label for="date">Date</label>
@@ -117,8 +100,12 @@
         <br>
         <button type="submit" id='changetodoinfo'>Submit</button>
         <button id='canceltodo'>cancel</button><br>
-    </div>
+    </form>
 
+    </div>
+   
+   
+    
     <script src="./main.js"></script>
 </body>
 </html>
