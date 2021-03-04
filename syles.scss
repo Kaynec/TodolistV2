@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *::before, *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * #container {
@@ -14,11 +14,9 @@
   height: 100%;
   position: relative;
 }
-
 * #done-container span {
   font-size: 1.5rem;
   padding: .2rem .5rem;
-  // border-left: 2px solid violet;
   margin-left: 4rem;
 }
 
@@ -28,15 +26,18 @@
   display: flex;
   margin-left: .0rem;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-#count2{
+
+#count2 {
   margin-left: .7rem;
 }
-.todo{
+
+.todo {
   margin-left: .7rem;
 }
+
 * #count span {
   font-size: 1.5rem;
   padding: .2rem .5rem;
@@ -52,14 +53,14 @@ html {
   margin: 0;
   font-size: 10px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -70,8 +71,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
   font-size: 2.5rem;
 }
@@ -102,7 +103,7 @@ body {
   line-height: 1.1;
   background: #380383;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   padding: 0.3rem 0.5rem;
   margin-left: 0.7em;
   color: white;
@@ -111,7 +112,7 @@ body {
   font-size: 20.5px;
   -webkit-appearance: button;
   -moz-appearance: button;
-       appearance: button;
+  appearance: button;
   outline: none;
 }
 
@@ -138,7 +139,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   padding: 1rem 0;
 }
 
@@ -149,13 +150,13 @@ body {
   -ms-grid-column: 1;
   grid-column: 1fr;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
   border: 2px solid transparent;
 }
 
@@ -202,7 +203,7 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .plus-button:before {
@@ -219,8 +220,8 @@ body {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   max-width: 75%;
   background: #5862ec;
   min-height: 25vh;
@@ -229,10 +230,11 @@ body {
   padding: 3rem;
   line-height: 1.8;
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top:20vh ;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 20vh;
 }
 
 #projectform p {
@@ -248,20 +250,6 @@ body {
   margin: 1rem 0;
 }
 
-// #projectform button {
-//   font-size: 1.5rem;
-//   color: white;
-//   background: #6200ee;
-//   border-radius: 4px;
-//   border: 2px solid transparent;
-// }
-
-// #projectform button:hover {
-//   -webkit-transform: scale(1.1);
-//           transform: scale(1.1);
-//   background: #5862ec;
-// }
-
 #todoform {
   max-width: 80%;
   border-radius: 2%;
@@ -271,10 +259,11 @@ body {
   text-align: center;
   line-height: 2;
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top:20vh ;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 20vh;
 }
 
 #todoform button {
@@ -288,7 +277,7 @@ body {
 
 #todoform button:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   background: #8b4be4;
 }
 
@@ -304,14 +293,14 @@ body {
   cursor: pointer;
   background: #8b4be4;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   color: white;
   padding: 0 2rem;
   border: none;
   font-size: 1.8rem;
   -webkit-appearance: button;
   -moz-appearance: button;
-       appearance: button;
+  appearance: button;
   outline: none;
 }
 
@@ -326,7 +315,7 @@ body {
 .plus-button:hover {
   cursor: pointer;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #todoselect {
@@ -339,14 +328,14 @@ body {
   line-height: 1.1;
   background: #380383;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   color: white;
   padding: 1.4rem 0;
   border: none;
   font-size: 1.4rem;
   -webkit-appearance: button;
   -moz-appearance: button;
-       appearance: button;
+  appearance: button;
   outline: none;
 }
 
@@ -360,8 +349,8 @@ body {
 .innertodo > div {
   width: 50%;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .innertodo > div:nth-child(2) {
@@ -370,15 +359,15 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   width: 50%;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .innertodo > div:nth-child(2) label {
@@ -407,8 +396,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .innertodo div:nth-child(2) a {
@@ -426,7 +415,7 @@ body {
   cursor: pointer;
   background: chartreuse;
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .innertodo div:first-child {
@@ -434,8 +423,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .innertodo div:first-child label {
@@ -444,7 +433,6 @@ body {
 
 #todoform {
   font-size: 1.5rem;
-
 }
 
 .innertodo {
@@ -474,10 +462,11 @@ body {
   max-width: 70%;
   font-size: 1.4rem;
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top:20vh ;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: 20vh;
 }
 
 #changetodo button {
@@ -491,7 +480,7 @@ body {
 
 #changetodo button:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   background: #8b4be4;
 }
 
@@ -507,47 +496,40 @@ body {
   cursor: pointer;
   background: #8b4be4;
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   color: white;
   padding: 0 2rem;
   border: none;
   font-size: 1.8rem;
   -webkit-appearance: button;
   -moz-appearance: button;
-       appearance: button;
+  appearance: button;
   outline: none;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) {
   html {
     max-width: 70%;
     margin: 0 auto;
     font-size: 12px;
   }
-  
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   html {
     max-width: 70%;
     margin: 0 auto;
     font-size: 14.5px;
   }
 }
-
-button {
-  font-size: 1.5rem;
-  color: white;
-  background: #6200ee;
-  border-radius: 4px;
-  border: 2px solid transparent;
-  z-index: 999;
-
-&:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background: #5862ec;
-z-index: 999;
+a:hover{
+  cursor: pointer;
 }
 
+#removeproject {
+  cursor: pointer;
+}
+#removeproject:hover {
+border: none;
+cursor: pointer;
 }

@@ -15,18 +15,16 @@
             <a id="toggleprojectform">+</a>
             <select name="pselect" id="select">
             </select>
-            <button id="removeproject">Remove This Project</button>
+            <button id="removeproject" type="button">Remove This Project</button>
            </div>
          </header>
          <small>click on a todos white space to show/hide it's description</small>
-
+         <div>  <p id="projecterrors"></p></div>
          <div id="addtodo"><button class="plus-button" type="button"></button></div>
         <div id='count'>
             <span>Todo</span>
             <span> Tasks Remaining</span>
         </div>
-        
-
         <div id="taskcontainer">
 
             <div id="todo-container">
@@ -39,9 +37,6 @@
             <div id="done-container">
                 
             </div>
-
-    <p id="projecterrors"></p>
-
         </div>
         
         <div id="projectform">
@@ -55,8 +50,6 @@
             <p id="projectparagraph"></p>
         </div>
 
-
-        <div id="addtodo">
             <div id="todoform">
              <label for="title">Title Of Your Todo</label><br>
              <input id="title" type="text" maxlength="20"><br>
@@ -78,13 +71,6 @@
              <p id="todoformpara"></p>
          </div>
 
-    </div>
-   
-
-
-
-
-
     <form id="changetodo">
         <label for="title">Title</label><br>
         <input type="text" required maxlength="20"><br>
@@ -104,8 +90,6 @@
 
     </div>
    
-   
-    
     <script src="./main.js"></script>
 </body>
 </html>
